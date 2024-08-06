@@ -1,0 +1,199 @@
+body{
+    font-family: sans-serif;
+    background: linear-gradient(to right, #b99178 , #b99178);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* le style de notre container de feuille*/
+.container{
+    position: relative;
+    width: 42%;
+    max-width: 1000px; 
+    min-height: 920px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    box-shadow: -8px 80px 20px 0px #504e4e;
+}
+/* fin le style de notre container de feuille*/
+/* style du left-side*/
+.container .left-side{
+    position: relative;
+    background: #f0e6dc;
+    border-right: solid;
+}
+/* fin style du left-side*/
+/* style du nom et la profesion*/
+.person_name{
+    border-bottom:solid ;
+}
+.name{
+    font-size: 40px;
+    margin: 25px;
+    color: #c36528;
+}
+.profession{
+    color: #2a2729;
+}
+/* fin du style de nom et de profesion */
+
+/*style du profil , education, experience
+NB : sur cette partie les class utilise les mm nom d'ou le code a ecrire est devenue moins , 
+note bien que le mm nom de class donne du style a beaucoup d'element ;
+*/
+.profile_education_experience{
+    display: inline;
+}
+.profile_left_title{
+    background: linear-gradient(to right, #81441d ,#a55a28);
+    padding-left: 45px;
+}
+.paragraph{
+    font-size: 12px;
+    line-height: 1.5em;
+    padding: 0px 45px 20px;
+    border-bottom: solid;
+}
+.education_experience{
+    display: inline;
+}
+.year_working{
+    text-align: center;
+    padding-left: 45px;
+}
+.year_company{
+    padding-left: 45px;  
+}
+.year_company h4{
+    margin: 0;
+    color: #c26623;
+}
+/* le paragraph2 n'utilise pas le mm nom que le paragraph car il ne sont pas du mm style du a la raison il a ete diferencie */
+.paragraph2{
+    font-size: 12px;
+    line-height: 1.5em;
+    padding: 0px 45px 20px;
+}
+
+/* donner du style au right-side*/
+/* style du right_side */
+.container .right-side{
+    position: relative;
+    background: #d2b4a0;
+    font-weight: 10;
+    justify-content: center;
+}
+/* le debut du style de profile*/
+.profil{
+    background: linear-gradient(to right, #81441d ,#a55a28);
+    border-bottom: rgb(5, 5, 5) solid;
+}
+.profil .facePhoto{
+    width: 220px;
+    height: 230px;
+    margin: 28px;
+    object-fit: cover;
+}
+/* fin du style de profile */
+/* debut du style de lang */
+.lang{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lang .title{
+    background: linear-gradient(to right, #81441d ,#a55a28);
+    font-family: "Platypi",;
+    font-size: 30px;
+    padding: 1px;
+    padding-left: 10px;
+    padding-right: 4%;
+    margin-left: -25%;
+}
+.lang ul {
+    line-height: 1.5rem;
+    margin-top: -7px;
+    margin-left: -25%;
+}
+/* fin du style de lang */
+/*debut du style skills */
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.skills .title_skills{
+    background: linear-gradient(to right, #81441d ,#a55a28);
+    padding: 1px;
+    padding-left: 15px;
+    padding-right: 15%;
+    margin-left: -30%;
+}
+.skills ul{
+    line-height: 1.5rem;
+    margin-top: -1px;
+    margin-left: -5%;
+}
+/*fin du style skills */
+/*debut du style contact*/
+.contact ul{
+    position: relative;
+    line-height: 2rem;
+}
+.contact ul li{
+    position: relative;
+    list-style: none;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.contact ul li .icon{
+    font-size: 20px;
+    color: rgba(145, 60, 4, 0.916);
+    margin-right: 10px;
+}
+/* debut du style social_network */
+.social_network{
+    margin-left: 15%;
+    color: rgb(140, 72, 4);
+}
+.network_img{
+    padding: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.social_network .user{
+    font-size: 25px;
+    margin-top: 5px;
+}
+/* debut du style social_network */
+/* la responsivite */
+@media(max-width:1000px){
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0;
+    }
+} 
+@media(max-width:200px){
+    .right-side{
+        display: block;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact{
+        margin-left: 45px;
+    }
+    .social_network{
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
